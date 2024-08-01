@@ -8,7 +8,10 @@ const sum = (arr, total = 0 , idx = 0 ) => {
 }
 
 // Reverse string using recursive approach
-const reverse = (str) => {};
+const reverse = (str) => {
+  if (str <= 1) return str 
+  return reverse(str.slice(1)) + str[0]
+};
 
 // Iterative approach to solving the fibonacci problem
 const fibIter = (n) => {
